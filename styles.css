@@ -50,6 +50,11 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+.menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
 
 .container{
     display: grid;
@@ -319,6 +324,38 @@ footer {
     .header{
         background-color: #333;
     }
+    .menu{
+        display: flex;
+        align-items: end;
+    }
+    .search-bar{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #777;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: block;
+    }
     .fleet__wrapper-1{
         flex-direction: column;
     }
@@ -330,8 +367,19 @@ footer {
         flex-direction: column;
 
     }
+    .card{
+        grid-template-rows: 1fr;
+    }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+    .header{
+        background-color: #333;
+    }
+    .search-bar{
+        display: flex;
+        flex-direction: column;
+
+    }
     .feature{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -341,6 +389,14 @@ footer {
     
 }
 @media (min-width: 1025px) {
+    .header{
+        background-color: #333;
+    }
+    .search-bar{
+        display: flex;
+        flex-direction: column;
+
+    }
     .feature{
         grid-template-columns: repeat(3,1fr);
     }
