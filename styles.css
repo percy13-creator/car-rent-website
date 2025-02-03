@@ -320,18 +320,16 @@ footer {
     background: #333;
 }
 @media (max-width: 768px) {
-    .header{
+    .header {
         background-color: #333;
+        position: relative;
     }
-    .menu{
-        display: flex;
-        align-items: end;
-    }
-    .search-bar{
-        display: flex;
-        flex-direction: column;
 
+    .menu {
+        display: flex;
+        align-items: center;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -352,24 +350,32 @@ footer {
         padding: 10px 0;
     }
 
-    .menu {
-        display: block;
-    }
-    .fleet__wrapper-1{
+    .fleet__wrapper-1 {
         flex-direction: column;
     }
-    .features{
+
+    .features {
+        grid-template-columns: 1fr; 
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 90%;
+    }
+
+    .grid {
         grid-template-columns: 1fr;
     }
-    .search-container{
-        display: flex;
-        flex-direction: column;
 
-    }
-    .card{
-        grid-template-rows: 1fr;
+    .card {
+        width: 100%;
     }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .header{
         background-color: #333;
