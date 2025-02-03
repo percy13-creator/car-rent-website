@@ -13,7 +13,7 @@ header{
 }
 .main-nav {
     display: flex;
-    justify-content: space-between; /* Distribute space between items */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px;
     background-color: #333;
@@ -31,7 +31,7 @@ header{
     margin: 0;
     padding: 0;
     gap: 20px;
-    margin: 0 auto; /* Center the nav links */
+    margin: 0 auto; 
 }
 .nav-links a{
     color: #ccc;
@@ -74,7 +74,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 10px;
 }
@@ -84,20 +83,20 @@ button {
     padding: 10px;
     border: 1px solid #333;
     border-radius: 10px;
-    width: 250px; /* Adjust width as needed */
+    width: 250px;
 }
 
 .search-button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF; /* Button color */
+    background-color: #007BFF; 
     color: white;
     cursor: pointer;
 }
 
 .search-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3; 
 }
 .welcome{
     text-align: center;
@@ -129,9 +128,9 @@ h1{
 
 img{
   width: 350px;
-  height: auto; /* Maintain aspect ratio */
-  border: 2px solid #ccc; /* Add a border if you like */
-  border-radius: 10px; /* Optional: Rounded corners */
+  height: auto; 
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
   transition: transform 0.3s;
 }
 p{
