@@ -30,10 +30,14 @@
       <div class="search-container">
           <input type="text" id="destination-input" placeholder="Enter Destination" class="search-input" />
           <div id="search-results"></div>
-          <input type="date" placeholder="Pickup Date" class="search-input" />
-          <input type="date" placeholder="Return Date" class="search-input" />
-          <button class="search-button">Search</button>
+          <button class="search-button" id="searchBTN">Search</button>
       </div>
+      <section class="weather">
+        <h2 id="location">Current Weather in .......</h2>
+        <div id="weather-info">
+          <p>Enter distination to fetch data...</p>
+        </div>
+      </section>
   </section>
     <section class="welcome">
         <h1> Premium Car Rental In Barcelona</h1>
@@ -81,12 +85,7 @@
 
     </section>
     
-    <section class="weather">
-      <h2>Current Weather in Barcelona</h2>
-      <div id="weather-info">
-        <p>Loading weather data...</p>
-      </div>
-    </section>
+    
 
     <footer>
 
